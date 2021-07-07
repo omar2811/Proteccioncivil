@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="document.getElementById('demo').innerHTML='precio'">The time is?</button>
+
+<p id="demo"></p>
+<div class="form-group">
+                     <select name="curso" class="browser-default custom-select curso">
+                        <option selected="" >Selecciona un Curso de Capacitacion</option>
+                        <option  value="1999">Brigadas internas de Protección Civil</option>
+                        <option value="Cursos basicos de primeros auxilios">Cursos basicos de primeros auxilios</option>
+                        <option value="Tipo de riesgo que afectan a la población">Tipo de riesgo que afectan a la población</option>
+                        <option value="Antecedentes del Sistema Nacional de Protección Civil">Antecedentes del Sistema Nacional de Protección Civil</option>
+                        <option value="De señales y avisos">De señales y avisos</option>
+                        
+                        <option value="Prevencion y control de incendios">Prevencion y control de incendios</option>
+                        <option value="Simulacros de evacuación">Curso avanzado de primeros auxilios</option>
+                        <option value="Simulacros de evacuación">Curso avanzado de prevención y control de incendios</option>
+                        <option value="Simulacros de evacuación">Curso de simulacro de evacuación</option>
+                        <option value="Simulacros de evacuación">Cursos especiales de protección civil</option>
+                        <option value="Simulacros de evacuación">Curso de búsqueda y rescate</option>
+                        
+                        <option value="Simulacros de evacuación">Curso de evacuación de inmuebles</option>
+                        <option value="Simulacros de evacuación">Curso de identificación de fallas estructurales</option>
+                        
+                        <option value="Simulacros de evacuación">Curso de primeros auxilios psicológicos en emergencia o desastre</option>
+                        <option value="Simulacros de evacuación"></option>
+            
+                      </select>
+                  </div>
+                  
+<p id="demo"></p>
+ 
+
+<div class="resultado"></div>
+<script>
+    const selectElement = document.querySelector('.curso');
+
+selectElement.addEventListener('change', (event) => {
+    const resultado = document.querySelector('.resultado');
+    resultado.textContent = `El precio es: ${event.target.value} UMA`;
+});
+    </script>
+
+</body>
+</html>
